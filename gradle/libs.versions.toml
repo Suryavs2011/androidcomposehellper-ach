@@ -1,0 +1,53 @@
+[versions]
+lifecycle = "2.10.0"
+biometric = "1.1.0"
+coreKtx = "1.17.0"
+composeBom = "2026.02.00"
+activityCompose = "1.12.4"
+junit4 = "4.13.2"
+androidxJunit = "1.3.0"
+espresso = "3.7.0"
+agp = "9.0.1"
+kotlin = "2.3.10"
+navigationCompose = "2.9.7"
+pagingCompose = "3.4.1"
+mapsCompose = "8.1.0"
+constraintlayout = "1.1.1"
+documentfile = "1.1.0"
+serialization = "1.10.0"
+
+[libraries]
+lifecycle-service = { group = "androidx.lifecycle", name = "lifecycle-service", version.ref = "lifecycle" }
+lifecycle-runtime-compose = { group = "androidx.lifecycle", name = "lifecycle-runtime-compose", version.ref = "lifecycle" }
+biometric = { group = "androidx.biometric", name = "biometric", version.ref = "biometric" }
+core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
+compose-bom = { group = "androidx.compose", name = "compose-bom", version.ref = "composeBom" }
+activity-compose = { group = "androidx.activity", name = "activity-compose", version.ref = "activityCompose" }
+compose-ui = { group = "androidx.compose.ui", name = "ui" }
+compose-ui-preview = { group = "androidx.compose.ui", name = "ui-tooling-preview" }
+compose-ui-tooling = { group = "androidx.compose.ui", name = "ui-tooling" }
+compose-ui-test-manifest = { group = "androidx.compose.ui", name = "ui-test-manifest" }
+compose-ui-test-junit4 = { group = "androidx.compose.ui", name = "ui-test-junit4" }
+compose-material3 = { group = "androidx.compose.material3", name = "material3" }
+compose-foundation = { group = "androidx.compose.foundation", name = "foundation" }
+compose-animation = { group = "androidx.compose.animation", name = "animation" }
+compose-material-icons-extended = { group = "androidx.compose.material", name = "material-icons-extended" }
+compose-constraintlayout = { group = "androidx.constraintlayout", name = "constraintlayout-compose", version.ref = "constraintlayout" }
+compose-viewmodel = { group = "androidx.lifecycle", name = "lifecycle-viewmodel-compose", version.ref = "lifecycle" }
+compose-paging = { group = "androidx.paging", name = "paging-compose", version.ref = "pagingCompose" }
+compose-navigation = { group = "androidx.navigation", name = "navigation-compose", version.ref = "navigationCompose" }
+compose-maps = { group = "com.google.maps.android", name = "maps-compose", version.ref = "mapsCompose" }
+junit4 = { group = "junit", name = "junit", version.ref = "junit4" }
+androidx-junit = { group = "androidx.test.ext", name = "junit", version.ref = "androidxJunit" }
+espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "espresso" }
+document-file = { group = "androidx.documentfile", name = "documentfile", version.ref = "documentfile" }
+serialization = { group = "org.jetbrains.kotlinx", name = "kotlinx-serialization-json", version.ref = "serialization" }
+compose-material3-adaptive = { group = "androidx.compose.material3.adaptive", name = "adaptive" }
+compose-material3-window-sizeClass = { group = "androidx.compose.material3", name = "material3-window-size-class" }
+compose-material3-adaptive-navigation = { group = "androidx.compose.material3", name = "material3-adaptive-navigation-suite" }
+compose-ui-test = { group = "androidx.compose.ui", name = "ui-test" }
+
+[plugins]
+android-library = { id = "com.android.library", version.ref = "agp" }
+kotlin-compose = { id = "org.jetbrains.kotlin.plugin.compose", version.ref = "kotlin" }
+maven-publish = { id = "maven-publish" }
